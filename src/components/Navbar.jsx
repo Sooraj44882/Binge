@@ -1,6 +1,6 @@
 const Navbar = () => {
   return (
-    <nav className="fixed top-0 w-full p-4 md:px-8 flex items-center justify-between z-50 bg-gradient-to-b from-black/90 to-transparent">
+    <nav className="fixed top-0 w-full p-4 md:px-8 flex items-center justify-between z-50 bg-linear-to-b from-black/90 to-transparent">
       <div className="text-binge-red text-3xl font-bold uppercase tracking-wider cursor-pointer">
         Binge
       </div>
