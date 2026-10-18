@@ -1,6 +1,9 @@
 import { FaPlay, FaPlus, FaTimes } from "react-icons/fa";
 
 const Modal = ({ movie, onClose }) => {
+
+  console.log(movie);
+  console.log(onClose);
   if (!movie) return null;
 
   return (

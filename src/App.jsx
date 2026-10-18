@@ -1,24 +1,25 @@
-import Hero from "./components/Hero.jsx";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar.jsx";
-import Row from "./components/Row.jsx";
 import Sidebar from "./components/Sidebar.jsx";
+import Home from "./pages/Home.jsx";
 
 function App() {
   return (
-    <div className="min-h-screen bg-binge-dark text-white font-sans overflow-x-hidden flex">
-      <Sidebar />
+    <BrowserRouter>
+      <div className="min-h-screen bg-binge-dark text-white font-sans overflow-x-hidden flex">
+        <Sidebar />
 
-      <div className="flex-1 pl-20">
-        <Navbar />
-        <Hero />
-        
-        <main className="px-4 md:px-12 py-12">
-          <Row title="Trending Now" />
-          <Row title="Watch Later" />
-          <Row title="Top Rated" />
-        </main>
+        <div className="flex-1 pl-20">
+          <Navbar />
+
+          <Routes>
+            <Route path="/" element={<Home/>}/>
+            <Route />
+          </Routes>
+
+        </div>
       </div>
-    </div>
+    </BrowserRouter>
   );
 }
 
