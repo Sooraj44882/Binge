@@ -4,24 +4,28 @@ import { FaUserCircle, FaCreditCard, FaLock } from "react-icons/fa";
 const Settings = () => {
   const [autoplay, setAutoplay] = useState(true);
 
+  const userName = localStorage.getItem("binge_name") || "AbcBinge";
+  const userEmail = localStorage.getItem("binge_email") || "Abc@binge.com";
+
   return (
-    <div className="pt-28 px-4 md:px-16 min-h-screen max-w-4xl mx-auto text-gray-300">
-      <h1 className="text-3xl md:text-4xl font-bold text-white mb-8">
-        Account Settings
+    <div className="pt-24 px-8 min-h-screen text-white max-w-2xl mx-auto">
+      <h1 className="text-3xl font-bold mb-8">
+        Settings
       </h1>
 
-      <div className="bg-[#181818] p-6 rounded-lg mb-8 flex flex-col md:flex-row items-center gap-6 border border-zinc-800">
+      <div className="mb-8 p-6 bg-zinc-900 rounded-md">
         <FaUserCircle className="text-7xl text-gray-500" />
-        <div className="flex-1 text-center md:text-left">
-          <h2 className="text-2xl text-white font-bold">Student Developer</h2>
-          <p className="text-gray-400">student@binge.com</p>
-        </div>
-        <button className="bg-gray-700 hover:bg-gray-600 text-white px-6 py-2 rounded font-bold transition">
-          Manage Profile
+        <h2 className="text-xl font-bold mb-2">Profile</h2>
+
+        <p className="text-white text-lg font-bold mb-1">{userName}</p>
+        <p className="text-gray-400 mb-4">Email: {userEmail}</p>
+
+        <button className="bg-white text-black px-4 py-2 font-bold rounded-sm hover:bg-gray-300">
+          Change Email
         </button>
       </div>
 
-      <div className="mb-8">
+     <div className="mb-8">
         <h3 className="text-xl text-white font-bold mb-4 flex items-center gap-2">
           <FaCreditCard /> Plan Details
         </h3>

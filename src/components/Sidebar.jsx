@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { FaFilm, FaHome, FaList, FaSearch, FaTv } from "react-icons/fa";
+import { FaFilm, FaHome, FaList, FaSearch, FaTv,FaCog } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 
@@ -8,10 +8,11 @@ const Sidebar = () => {
 
   const menuItems = [
     { name: "Search", icon: <FaSearch />, path: "/search" },
-    { name: "Home", icon: <FaHome />, path: "/" },
-    { name: "Series", icon: <FaTv />, path: "/series" },
+    { name: "Home", icon: <FaHome />, path: "/home" },
+    { name: "Series", icon: <FaTv />, path: "/Series" },
     { name: "Movies", icon: <FaFilm />, path: "/movies" },
     { name: "My List", icon: <FaList />, path: "/my-list" },
+    { name: "Settings", icon: <FaCog />, path: "/Setting" },
   ];
 
   return (

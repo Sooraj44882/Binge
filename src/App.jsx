@@ -4,24 +4,33 @@ import Sidebar from "./components/Sidebar.jsx";
 import Home from "./pages/Home.jsx";
 import Series from "./pages/series.jsx";
 import Setting from "./pages/Setting.jsx";
+import Intro from "./pages/Intro.jsx";
 
 function App() {
   return (
     <BrowserRouter>
-      <div className="min-h-screen bg-binge-dark text-white font-sans overflow-x-hidden flex">
-        <Sidebar />
+      <Routes>
+        
+        <Route path="/" element={<Intro />} />
 
-        <div className="flex-1 pl-20">
-          <Navbar />
+        <Route path="/*" element={
+          <div className="min-h-screen bg-black text-white font-sans overflow-x-hidden flex">
+            <Sidebar />
 
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/Series" element={<Series />} />
-            <Route path="/Setting" element={<Setting/>} />
+            <div className="flex-1 pl-20">
+              <Navbar />
 
-          </Routes>
-        </div>
-      </div>
+              <Routes>
+                <Route path="/home" element={<Home />} />
+                <Route path="/Series" element={<Series />} />
+                <Route path="/Setting" element={<Setting/>} />
+
+              </Routes>
+            </div>
+          </div>
+        } />
+        
+      </Routes>
     </BrowserRouter>
   );
 }
