@@ -3,6 +3,9 @@
 
 hey welcome to binge   . it's a binging website where you can track your movie lists, share them with friends and watch your favorite shows
 
+## Live Link
+click here - https://binge-tau.vercel.app/
+
 A front-end react app .it is still in progress 
 
 ![alt text](</public/Screenshot 2026-10-18 221303.png>)
