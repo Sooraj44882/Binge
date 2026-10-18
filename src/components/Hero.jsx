@@ -1,30 +1,32 @@
 const Hero = () => {
   return (
-    <div className="relative w-full h-[70vh] border-b-8 border-binge-red">
-      <div className="absolute top-0 left-0 w-full h-full bg-zinc-900">
-        <div className="absolute w-full h-full bg-linear-to-r from-black via-black/80 to-transparent z-10"></div>
+    <div className="relative w-full h-[60vh] text-white">
+      
+      <div className="absolute top-0 left-0 w-full h-full">
+        <img 
+          src="/images/hero.png" 
+          alt="Spider-Man" 
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute top-0 left-0 w-full h-full bg-linear-to-r from-black/90 to-transparent"></div>
       </div>
 
-      <div className="relative z-20 pt-[25vh] px-4 md:px-12 w-full md:w-[65%]">
-        <h1 className="text-5xl md:text-7xl font-black uppercase tracking-tighter text-white mb-4">
-          NAMe
+      <div className="relative z-10 pt-[20vh] px-8 md:px-16 w-full md:w-[60%]">
+        <h1 className="text-3xl md:text-5xl font-bold mb-4">
+          Spider-Man: Brand New Day
         </h1>
-        <p className="text-zinc-400 text-lg mb-8 max-w-xl font-mono">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam,
-          dolorem.
+        
+        <p className="text-gray-300 text-sm md:text-base mb-6">
+          When a new threat emerges in New York City, Peter Parker must balance his ordinary life with his extraordinary responsibilities.
         </p>
 
-        <div className="flex flex-wrap gap-6">
-          <button className="bg-binge-red px-10 py-3 transform -skew-x-12 hover:bg-white hover:text-black transition-none duration-0">
-            <span className="block transform skew-x-12 font-bold uppercase tracking-widest">
+        <div className="flex gap-4">
+          <button className="bg-white text-black px-8 py-2 font-bold rounded-sm hover:bg-gray-300 transition">
               Stream Now
-            </span>
           </button>
 
-          <button className="bg-transparent border-2 border-zinc-500 px-10 py-3 transform -skew-x-12 hover:border-white hover:bg-white hover:text-black transition-none duration-0">
-            <span className="block transform skew-x-12 font-bold uppercase tracking-widest">
+          <button className="bg-gray-600/70 text-white px-8 py-2 font-bold rounded-sm hover:bg-gray-600 transition">
               More info
-            </span>
           </button>
         </div>
       </div>
