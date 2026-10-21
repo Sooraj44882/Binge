@@ -5,6 +5,7 @@ import Home from "./pages/Home.jsx";
 import Series from "./pages/series.jsx";
 import Setting from "./pages/Setting.jsx";
 import Intro from "./pages/Intro.jsx";
+import Movies from "./pages/Movies.jsx";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
                 <Route path="/home" element={<Home />} />
                 <Route path="/Series" element={<Series />} />
                 <Route path="/Setting" element={<Setting/>} />
+                <Route path="/Movies" element={<Movies/>}/>
 
               </Routes>
             </div>

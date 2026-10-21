@@ -1,12 +1,14 @@
+import Row from "../components/Row";
+
 const Series = () => {
   return (
-    <div className="pt-32 px-12 h-screen">
-      <h1 className="text-4xl font-bold text-white mb-6">TV Series</h1>
-      <p>this is seprate page for series </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus
-        beatae dolorum magni!
-      </p>
+    <div>
+      <main className="px-4 md:px-12 py-12">
+        <Row title="Trending TV Shows" />
+        <Row title="Sci-Fi & Fantasy" />
+        <Row title="True Crime Docuseries" />
+        <Row title="Reality TV" />
+      </main>
     </div>
   );
 };
